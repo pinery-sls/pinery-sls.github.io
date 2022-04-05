@@ -1,385 +1,621 @@
-﻿<!DOCTYPE html>
-<html lang="zh-cn">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="format-detection" content="email=no" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="renderer" content="webkit">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-    <title>[求职]hack-hu-Java开发工程师</title>
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet"  type="text/css" href="assets/css/typo.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
 
-    <script>
-        function loading() {
-            document.getElementsByClassName('avatar')[0].style.display = 'block';
-            document.getElementsByClassName('loading')[0].style.display = 'none';
-        }
-    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Mingbao Lin's Homepage (林明宝的个人主页)</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+      rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+  
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
 </head>
 
-<body>
+<body id="page-top">
 
-    <header class="header"></header>
+  <!-- Copyright ? 2008. Spidersoft Ltd -->
+  <style>
+  </style>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none"></span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="./img/profile3.jpg" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#working">Working Experience</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#activities">Activities</a>
+        </li>          
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-    <article class="container">
-        <section class="side" id="side">
-
-
-            <label class="switch" style="display: none;" onchange="switchFixed()">
-                <script type="text/javaScript">
-                    function switchFixed() {
-                    var value = document.getElementById('side').style.position === 'fixed' ? 'absolute' : 'fixed';
-                    document.getElementById('side').style.position = value;
-                }
-            </script>
-                <input id="cb" type="checkbox">
-                <span class="slider round"></span>
-            </label>
-            <style>
-                @media (min-width: 414px) {
-                    .switch {
-                        position: relative;
-                        display: inline-block !important;
-                        width: 60px;
-                        height: 34px;
-                    }
-
-                    .switch input {
-                        display: none;
-                    }
-
-                    .slider {
-                        position: absolute;
-                        cursor: pointer;
-                        top: 0;
-                        left: 0;
-                        right: 0;
-                        bottom: 0;
-                        background-color: #ccc;
-                        -webkit-transition: .4s;
-                        transition: .4s;
-                    }
-
-                    .slider:before {
-                        position: absolute;
-                        content: "";
-                        height: 26px;
-                        width: 26px;
-                        left: 4px;
-                        bottom: 4px;
-                        background-color: white;
-                        -webkit-transition: .4s;
-                        transition: .4s;
-                    }
-
-                    input:checked+.slider {
-                        background-color: #1abc9c;
-                    }
-
-                    input:focus+.slider {
-                        box-shadow: 0 0 1px #1abc9c;
-                    }
-
-                    input:checked+.slider:before {
-                        -webkit-transform: translateX(26px);
-                        -ms-transform: translateX(26px);
-                        transform: translateX(26px);
-                    }
-
-                    .slider.round {
-                        border-radius: 34px;
-                    }
-
-                    .slider.round:before {
-                        border-radius: 50%;
-                    }
-                }
-            </style>
-            <!-- 左侧固定开关，记得及时删除这段代码 End-->
-
-            <!-- 个人肖像 -->
-            <section class="me">
-                <section class="portrait">
-                    <!-- <div class="loading">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div> -->
-                    <!-- 头像照片 -->
-                    <img class="avatar" src="assets/images/card.jpg">
-                </section>
-
-                <h1 class="name"><strong>意向岗位</strong></h1>
-                <h4 class="info-job"><strong>Java开发工程师</strong> </h4>
-
-            </section>
-
-            <!-- 基本信息 -->
-            <section class="profile info-unit">
-                <h2>
-                    <i class="fa fa-user" aria-hidden="true"></i>基本信息</h2>
-                <hr />
-                <ul>
-                    <li>
-                        <label>个人信息</label>
-                        <span>hack-hu / 男 / 23岁</span>
-                    </li>
-                    <li>
-                        <label>英语水平</label>
-                        <span>CET-4</span>
-                    </li>
-
-                </ul>
-            </section>
-
-            <!-- 联系方式 -->
-            <section class="contact info-unit">
-                <h2>
-                    <i class="fa fa-phone" aria-hidden="true"></i>联系方式</h2>
-                <hr />
-                <ul>
-                    <li>
-                        <label><i class="fa fa-qq"></i></label>
-                        <a target="_blank">923091621</a>
-                    </li>
-                    <li>
-                        <label><i class="fa fa-envelope"></i></label>
-                        <a href="mailto:hack_hu@163.com" target="_blank">hack_hu@163.comn</a>
-                    </li>
-                    <li>
-                        <label><i class="fa fa-file-text-o"></i></label>
-                        <a href="https://blog.csdn.net/qq_38288847" target="_blank">hack-hu 的博客</a>
-                    </li>
-                    <li>
-                        <label><i class="fa fa-github" aria-hidden="true"></i></label>
-                        <a href="https://github.com/hackhu2019" target="_blank">github.com/hackhu2019</a>
-                    </li>
-                </ul>
-            </section>
-
-            <!-- 教育经历 -->
-            <section class="edu info-unit">
-                    <h2>
-                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>教育经历</h2>
-                    <hr />
-                    <ul>
-                        <li>
-                            <h3>
-                                <p>浙江大学宁波理工学院 —— 本科</p>
-                                <p>专业：软件工程</p>
-                            </h3>
-                            <time>时间：<mark> 2018.9-2020.7</mark></time>
-                            <p>
-                                GPA：<mark>4.38/5.0</mark>
-                            </p>
-                            <p>专业排名：<mark>前 5%</mark>
-                            </p>
-                        </li>
-                    </ul>
-                </section>
-    
-                <!-- 个人荣誉 -->
-                <section class="edu info-unit">
-                    <h2>
-                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>个人荣誉</h2>
-                    <hr />
-    
-    
-                    1、 2018 年浙江省优秀毕业生<br />
-                    2、 2017 年浙江省政府奖学金 <br />
-    
-                </section>
-            <!-- 个人技能 -->
-            <section class="skill info-unit">
-                <h2>
-                    <i class="fa fa-code" aria-hidden="true"></i>技能点</h2>
-                <hr/>
-                <ul>
-                    <li>
-                        <label>Java</label>
-                        <progress value="80" max="100"></progress>
-                    </li>
-                    <li>
-                        <label>JavaScript</label>
-                        <progress value="50" max="100"></progress>
-                    </li>
-                    <li>
-                        <label>C#</label>
-                        <progress value="60" max="100"></progress>
-                    </li>
-                    <li>
-                        <label>C</label>
-                        <progress value="70" max="100"></progress>
-                    </li>
-                    <li>
-                        <label>MySQL</label>
-                        <progress value="60" max="100"></progress>
-                    </li>
-                </ul>
-            </section>
-        </section>
-
-        <section class="main">
-
-            <!-- 专业能力 -->
-            <section class="work info-unit">
-                <h2>
-                    <i class="fa fa-pencil" aria-hidden="true"></i>专业能力</h2>
-                <hr />
-                <p> 掌握计算机网络、操作系统、软件工程基础课程，熟悉常用设计模式（单例模式、工厂模式、原型模式、适配器模式等）
-                </p>
-                <p>
-                    熟悉常用数据结构(Array、List、Stack、Queue、Heap、Tree),了解Hash、跳表，熟悉常用的排序算法(冒泡、插入、选择、快排、堆排、归并、桶)
-                </p>
-                <p>
-                    熟悉C/Java/C#、理解面向对象思想，掌握Java继承和多态特性。了解JavaWeb常用框架，如Spring、SpringBoot 等。
-                </p>
-            </section>
-
-            <!-- 工作经历 -->
-
-            <section class="project info-unit">
-                <h2>
-                    <i class="fa fa-paper-plane" aria-hidden="true"></i>工作经历</h2>
-                <hr />
-                <ul>
-                    <li>
-                        <h3>
-                            <span>【实习】：杭州代码狗科技有限公司</span>
-                            <time>2019.11-2020.01</time>
-                        </h3>
-                        <ul class="info-content">
-                            <li><i class="fa fa-users" aria-hidden="true"></i>
-                                [工作岗位]：Java开发实习生
-                            </li>
-                            <li><i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-                                [参与项目]：API管理中心
-                            </li>
-                            <li>
-                                <i class="fa fa-bars" aria-hidden="true"></i>
-                                [贡献]<br />
-                                <p>
-                                    &emsp;&emsp;1、制作代码生成器，根据数据库表格生成相应格式的Service、DAO层代码<br />
-                                    &emsp;&emsp;2、根据ElasticSearch提供的Java API 生成统计报表<br />
-                                    &emsp;&emsp;3、使用预排序遍历树算法对于多层级问题优化<br />
-                                    &emsp;&emsp;4、结合代码开发规范、单元测试修改代码BUG
-                                </p>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-
-            <!-- 项目经验 -->
-            <section class="project info-unit">
-                <h2>
-                    <i class="fa fa-terminal" aria-hidden="true"></i>项目经验</h2>
-                <hr />
-                <ul>
-                    <li>
-                        <h3>
-                            <span>[项目1]<a href="https://gitee.com/hackhu96/mall" target="_blank"> 商城系统</a></span>
-                            <span class="link">
-                                <a href="https://gitee.com/hackhu96/mall" target="_blank">Demo</a>
-                            </span>
-                            <time>2019.8-2019.9</time>
-                        </h3>
-                        <ul class="info-content">
-                            <li>技术栈：Spring + Spring MVC + MyBatis + MySQL + Ajax</li>
-                            <li>
-                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-                                [模块]用户管理、分类管理、商品管理、购物车管理、收货地址管理、订单管理
-                                <br />
-                                <i class="fa fa-users" aria-hidden="true"></i>
-                                [职责]Java后端开发
-                                <br />
-                                <i class="fa fa-bars" aria-hidden="true"></i>
-                                [主要贡献]<br />
-                                <p>
-                                    &emsp;&emsp;1、用枚举类型代替无意义常量，规范化编程<br />
-                                    &emsp;&emsp;2、利用 MD5 实现对密码的加密，同时针对常见的：横向越权、纵向越权问题等进行防御式编程<br />
-                                    &emsp;&emsp;3、对于产品分类的多层级问题结合递归算法解决<br />
-                                    &emsp;&emsp;4、对于浮点运算的精度丢失问题进行针对性处理
-                                </p>
-
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3>
-                            <span>[项目2] <a href="https://github.com/hackhu2019/seckill" target="_blank">
-                                    秒杀系统</a></span>
-                            <span class="link">
-                                <a href="https://github.com/hackhu2019/seckillk" target="_blank">Demo</a>
-                            </span>
-                            <time>2019.12-2020.3</time>
-                        </h3>
-                        <ul class="info-content">
-                            <li>技术栈：SpringBoot + Spring MVC + MyBatis + MySQL + Redis + RocketMQ</li>
-                            <li>
-                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-                                [模块]用户管理、商品管理、交易管理、秒杀管理等
-                            </li>
-                            <li>
-                                <i class="fa fa-users" aria-hidden="true"></i>
-                                [职责]Java后端开发
-                            </li>
-                            <li>
-                                <i class="fa fa-bars" aria-hidden="true"></i>
-                                [主要贡献]<br />
-                                <p>
-                                    &emsp;&emsp;1、对用户信息、商品信息等常用数据进行缓存处理
-                                    <br>&emsp;&emsp;2、采用异步流程对交易模块进行优化，维护数据最终一致性
-                                    <br>&emsp;&emsp;3、对秒杀模块引入令牌进行流量削峰、防刷限流
-                                    <br>&emsp;&emsp;4、结合 Jmeter 对秒杀模块进行压力测试
-                                </p>
-                            </li>
-                        </ul>
-                    </li>
-
-                </ul>
-            </section>
-            
-
-
-
-        </section>
-    </article>
-
-
-    <footer class="footer">
-        <p> <b>感谢您花时间阅读我的简历，期待能有机会和您共事。</b> </p>
-    </footer>
-
-    <!-- 侧栏 -->
-    <aside>
-        <ul>
+  <div class="container-fluid p-0">
+    <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+      <div class="my-auto">
+        <h2 class="mb-0">Mingbao Lin
+          <span class="text-primary">(林明宝)</span>
+        </h2>
+        <div class="mb-5"> Best way to reach me &#8594
+            Email: lmbxmu@stu.xmu.edu.cn
+        </div>
+        <p class="mb-5">I am currently a final-year Ph.D student in the Lab of <a href="https://mac.xmu.edu.cn/index.htm" target="_blank">MAC</a>, Artificial Intelligence Department, School
+          of Informatics, Xiamen University, China. Also, I will be a researcher at Tencent Youtu Lab.<br>
+          My supervisor is <a href="http://mac.xmu.edu.cn/rrji-en.html" target="_blank">Prof. Rongrong Ji</a>. More recently, I focus on:
+          <ul>
             <li>
-                <a href="https://github.com/hackhu2019" target="_blank">Github</a>
+               <b>Network compression and acceleration</b>
             </li>
             <li>
-                <a href="https://blog.csdn.net/qq_38288847" target="_blank">Blog</a>
+               <b>Multimedia retrieval using hashing technique</b>
             </li>
+          </ul>
+        </p>
+        <ul class="list-inline list-social-icons mb-0">
+          <li class="list-inline-item">
+            <a href="https://github.com/lmbxmu" target="_blank">
+              <i class="fa fa-github-square fa-3x"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://scholar.google.com/citations?user=Dp3L1bsAAAAJ&hl=en" target="_blank">
+              <i class="ai ai-google-scholar-square ai-3x"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://dblp.org/pers/hd/l/Lin:Mingbao" target="_blank">
+              <i class="ai ai-dblp-square ai-3x"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.researchgate.net/profile/Mingbao_Lin" target="_blank">
+              <i class="ai ai-researchgate-square ai-3x"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://orcid.org/0000-0003-1764-1894" target="_blank">
+              <i class="ai ai-orcid-square ai-3x"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.semanticscholar.org/author/Mingbao-Lin/49352079" target="_blank">
+              <i class="ai ai-semantic-scholar-square ai-3x"></i>
+            </a>
+          </li>
         </ul>
-    </aside>
+        <br>
+        <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=200&t=n&d=RWWgiUy0M5WxVvFN_4iRBNH8ObGL53aJVu9LE2BcjkA&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080'>
+        </script>
+      </div>
+    </section>
 
-    <script src="./assets/js/index.js" type="text/javascript"></script>
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="publications">
+      <div>
+        <h3 class="mb-5">Publications</h3>
+          
+         <h5>Journal</h5>
+          <ol>
+             <!-- 文章序列9 -->
+           <div class="product-cell row align-items-center justify-content-center">
+             <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+               <li><img class="product-cell-img" src="img/clr-rnf.png"></li>
+             </div>
+             <div class="product-cell-text col-lg-10 col-md-9 col-sm-12 col-xs-12">
+               <b>Mingbao Lin</b>, Liujuan Cao<sup>✉</sup>, Yuxin Zhang, Ling Shao, Chia-Wen Lin, Rongrong Ji<br>
+               <b>Pruning Networks with Cross-Layer Ranking & k-Reciprocal Nearest Filters.</b> 
+                 <a href="https://ieeexplore.ieee.org/document/9737040" target="_blank">[pdf]</a>                       
+                 <a href="https://arxiv.org/abs/2202.07190" target="_blank">[arXiv]</a> 
+                 <a href="https://github.com/lmbxmu/CLR-RNF" target="_blank">[code]</a>
+                 <br>IEEE Transactions on Neural Networks and Learning Systems (<b>TNNLS</b>). 2022
+             </div>
+           </div>
+              <!-- 文章序列8 -->
+           <div class="product-cell row align-items-center justify-content-center">
+             <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+               <li><img class="product-cell-img" src="img/dmad.jpg"></li>
+             </div>
+             <div class="product-cell-text col-lg-10 col-md-9 col-sm-12 col-xs-12">
+                Shaojie Li, <b>Mingbao Lin</b>, Yan Wang, Fei Chao, Ling Shao, Rongrong Ji<sup>✉</sup><br>
+               <b>Learning Efficient GANs for Image Translation via Differentiable Masks and co-Attention Distillation.</b> 
+                 <a href="https://ieeexplore.ieee.org/document/9729410" target="_blank">[pdf]</a>                    
+                 <a href="https://arxiv.org/abs/2011.08382" target="_blank">[arXiv]</a> 
+                 <a href="https://github.com/SJLeo/DMAD" target="_blank">[code]</a>
+                 <br>IEEE Transactions on Multimedia (<b>TMM</b>). 2022
+             </div>
+           </div>    
+            <!-- 文章序列7 -->
+           <div class="product-cell row align-items-center justify-content-center">
+             <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+               <li><img class="product-cell-img" src="img/ffsd.png"></li>
+             </div>
+             <div class="product-cell-text col-lg-10 col-md-9 col-sm-12 col-xs-12">
+                Shaojie Li, <b>Mingbao Lin</b>, Yan Wang, Yongjian Wu, Yonghong Tian, Ling Shao, Rongrong Ji<sup>✉</sup><br>
+               <b>Distilling a Powerful Student Model via Online Knowledge Distillation.</b> 
+                 <a href="https://ieeexplore.ieee.org/document/9729452" target="_blank">[pdf]</a>                     
+                 <a href="https://arxiv.org/abs/2103.14473" target="_blank">[arXiv]</a> 
+                 <a href="https://github.com/SJLeo/FFSD" target="_blank">[code]</a>
+                 <br>IEEE Transactions on Neural Networks and Learning Systems (<b>TNNLS</b>). 2022
+             </div>
+           </div>                  
+            <!-- 文章序列6 -->
+           <div class="product-cell row align-items-center justify-content-center">
+             <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+               <li><img class="product-cell-img" src="img/white.jpg"></li>
+             </div>
+             <div class="product-cell-text col-lg-10 col-md-9 col-sm-12 col-xs-12">
+                Yuxin Zhang, <b>Mingbao Lin</b>, Chia-Wen Lin, Jie Chen, Yongjian Wu, Yonghong Tian, Rongrong Ji<sup>✉</sup><br>
+               <b>Carrying out CNN Channel Pruning in a White Box.</b> 
+                 <a href="https://ieeexplore.ieee.org/document/9712474" target="_blank">[pdf]</a>            
+                 <a href="https://arxiv.org/abs/2104.11883" target="_blank">[arXiv]</a> 
+                 <a href="https://github.com/zyxxmu/White-Box" target="_blank">[code]</a>
+                 <br>IEEE Transactions on Neural Networks and Learning Systems (<b>TNNLS</b>). 2022
+             </div>
+           </div>                
+            <!-- 文章序列5 -->
+           <div class="product-cell row align-items-center justify-content-center">
+             <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+               <li><img class="product-cell-img" src="img/epruner.jpg"></li>
+             </div>
+             <div class="product-cell-text col-lg-10 col-md-9 col-sm-12 col-xs-12">
+               <b>Mingbao Lin</b>, Rongrong Ji<sup>✉</sup>, Shaojie Li, Yan Wang, Yongjian Wu, Feiyue Huang, Qixiang Ye<br>
+               <b>Network Pruning using Adaptive Exemplar Filters.</b> 
+                 <a href="https://ieeexplore.ieee.org/document/9448300" target="_blank">[pdf]</a>
+                 <a href="https://arxiv.org/abs/2101.07985" target="_blank">[arXiv]</a> 
+                 <a href="https://github.com/lmbxmu/EPruner" target="_blank">[code]</a>
+                 <br>IEEE Transactions on Neural Networks and Learning Systems (<b>TNNLS</b>). 2021
+             </div>
+           </div>                  
+           <div class="resume-item  align-self-center">
+            <!-- 文章序列4 -->
+           <div class="product-cell row align-items-center justify-content-center">
+             <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+               <li><img class="product-cell-img" src="img/filtersketch.jpg"/></li>
+             </div>
+             <div class="product-cell-text col-lg-10 col-md-9 col-sm-12 col-xs-12">
+               <b>Mingbao Lin</b>, Liujuan Cao<sup>✉</sup>, Shaojie Li, Qixiang Ye, Yonghong Tian, Jianzhuang Liu, Qi Tian, Rongrong Ji<br>
+               <b>Filter Sketch for Network Pruning.</b> 
+                 <a href="https://ieeexplore.ieee.org/document/9454340" target="_blank">[pdf]</a>
+                 <a href="https://arxiv.org/abs/2001.08514" target="_blank">[arXiv]</a> 
+                 <a href="https://github.com/lmbxmu/FilterSketch" target="_blank">[code]</a>
+                 <br>IEEE Transactions on Neural Networks and Learning Systems (<b>TNNLS</b>). 2021
+             </div>
+           </div>                  
+             <!-- 文章序列3 -->
+            <div class="product-cell row align-items-center justify-content-center">
+              <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+                <li><img class="product-cell-img" src="img/fcoh.jpg"></li>
+              </div>
+              <div class="product-cell-text col-lg-10 col-md-9 col-sm-12 col-xs-12">
+                <b>Mingbao Lin</b>, Rongrong Ji<sup>✉</sup>, Xiaoshuai Sun, Baochang Zhang, Feiyue Huang, Yonghong Tian, Dacheng Tao<br>
+                <b>Fast Class-wise Updating for Online Hashing.</b> 
+                  <a href="https://ieeexplore.ieee.org/document/9279285" target="_blank">[pdf]</a>                  
+                  <a href="https://arxiv.org/abs/2012.00318" target="_blank">[arXiv]</a>
+                  <a href="https://github.com/lmbxmu/mycode" target="_blank">[code]</a>
+                  <br>IEEE Transactions on Pattern Analysis and Machine Intelligence (<b>TPAMI</b>). 2020
+              </div>
+            </div>
+             <!-- 文章序列2 -->
+            <div class="product-cell row align-items-center justify-content-center">
+              <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+                <li><img class="product-cell-img" src="img/hmoh.jpg"></li>
+              </div>
+              <div class="product-cell-text col-lg-10 col-md-9 col-sm-12 col-xs-12">
+                <b>Mingbao Lin</b>, Rongrong Ji<sup>✉</sup>, Hong Liu, Xiaoshuai Sun, Shen Chen, Qi Tian<br>
+                <b>Hadamard Matrix Guided Online Hashing.</b> 
+                  <a href="https://link.springer.com/content/pdf/10.1007/s11263-020-01332-z.pdf" target="_blank">[pdf]</a> 
+                  <a href="https://arxiv.org/abs/1905.04454" target="_blank">[arXiv]</a> 
+                  <a href="https://github.com/lmbxmu/mycode" target="_blank">[code]</a>
+                  <br>International Journal of Computer Vision (<b>IJCV</b>). 2020
+              </div>
+            </div>   
+            <!-- 文章序列1 -->
+            <div class="product-cell row align-items-center justify-content-center">
+              <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+                <li><img class="product-cell-img" src="img/splh.jpg"/></li>
+              </div>
+              <div class="product-cell-text col-lg-10 col-md-9 col-sm-12 col-xs-12">
+                <b>Mingbao Lin</b>, Rongrong Ji<sup>✉</sup>, Shen Chen, Xiaoshuai Sun, Chia-Wen Lin<br>
+                <b>Similarity-Preserving Linkage Hashing for Online Image Retrieval.</b> 
+                  <a href="https://ieeexplore.ieee.org/document/9046296" target="_blank">[pdf]</a> 
+                  <a href="https://github.com/lmbxmu/mycode" target="_blank">[code]</a>
+                  <br>IEEE Transactions on Image Processing (<b>TIP</b>). 2020
+              </div>
+            </div>               
+          </ol>
+
+         <h5>Conference</h5>
+          <ol>
+             <!-- 文章序列8 -->
+           <div class="product-cell row align-items-center justify-content-center">
+             <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+               <li><img class="product-cell-img" src="img/intraq.png"></li>
+             </div>
+             <div class="product-cell-text col-lg-10 col-md-9 col-sm-12 col-xs-12">
+               Yunshan Zhong, <b>Mingbao Lin</b>, Gongrui Nan, Jianzhuang Liu, Baochang Zhang, Yonghong Tian, Rongrong Ji<sup>✉</sup><br>
+               <b>IntraQ: Learning Synthetic Images with Intra-Class Heterogeneity for Zero-Shot Network Quantization.</b> 
+                 <a href="#" target="_blank">[pdf coming]</a>                    
+                 <a href="https://arxiv.org/abs/2111.09136" target="_blank">[arXiv]</a> 
+                 <a href="https://github.com/zysxmu/intraq" target="_blank">[code]</a>
+                  <br>IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>). 2022
+             </div>
+           </div>                   
+            <!-- 文章序列7 -->
+           <div class="product-cell row align-items-center justify-content-center">
+             <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+               <li><img class="product-cell-img" src="img/recu.jpg"></li>
+             </div>
+             <div class="product-cell-text col-lg-10 col-md-9 col-sm-12 col-xs-12">
+                Zihan Xu, <b>Mingbao Lin</b>, Jianzhuang Liu, Jie Chen, Ling Shao, Yue Gao, Yonghong Tian, Rongrong Ji<sup>✉</sup><br>
+               <b>ReCU: Reviving the Dead Weights in Binary Neural Networks.</b> 
+                 <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Xu_ReCU_Reviving_the_Dead_Weights_in_Binary_Neural_Networks_ICCV_2021_paper.pdf" target="_blank">[pdf</a> |  
+                 <a href="https://openaccess.thecvf.com/content/ICCV2021/supplemental/Xu_ReCU_Reviving_the_ICCV_2021_supplemental.pdf" target="_blank">supp]</a> 
+                 <a href="https://arxiv.org/abs/2103.12369" target="_blank">[arXiv]</a> 
+                 <a href="https://github.com/z-hXu/ReCU" target="_blank">[code]</a>
+                 <br>IEEE/CVF International Conference on Computer Vision (<b>ICCV</b>). 2021
+             </div>
+           </div>                     
+             <!-- 文章序列6 -->
+            <div class="product-cell row align-items-center justify-content-center">
+              <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+                <li><img class="product-cell-img" src="img/rbnn.jpg"></li>
+              </div>
+              <div class="product-cell-text col-lg-10 col-md-9 col-sm-12 col-xs-12">
+                <b>Mingbao Lin</b>, Rongrong Ji<sup>✉</sup>, Zihan Xu, Baochang Zhang, Yan Wang, Yongjian Wu, Feiyue Huang, Chia-Wen Lin<br>
+                <b>Rotated Binary Neural Network.</b> 
+                  <a href="https://papers.nips.cc/paper/2020/file/53c5b2affa12eed84dfec9bfd83550b1-Paper.pdf" target="_blank">[pdf]</a>
+                  <a href="https://arxiv.org/abs/2009.13055" target="_blank">[arXiv]</a>
+                  <a href="https://github.com/lmbxmu/RBNN" target="_blank">[code]</a>
+                  <br>The 34th Conference on Neural Information Processing Systems (<b>NeurIPS</b>). 2020
+              </div>
+            </div>
+            <!-- 文章序列5 -->
+            <div class="product-cell row align-items-center justify-content-center">
+              <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+                <li><img class="product-cell-img" src="img/hrank.png"></li>
+              </div>
+              <div class="product-cell-text col-lg-10 col-md-9 col-sm-12 col-xs-12">
+                <b>Mingbao Lin</b>, Rongrong Ji<sup>✉</sup>, Yan Wang, Yichen Zhang, Baochang Zhang, Yonghong Tian, Ling Shao<br>
+                <b>HRank: Filter Pruning using High-Rank Feature Map.</b> 
+                  <a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Lin_HRank_Filter_Pruning_Using_High-Rank_Feature_Map_CVPR_2020_paper.pdf" target="_blank">[pdf]</a>
+                  <a href="https://arxiv.org/abs/2002.10179" target="_blank">[arXiv]</a> 
+                  <a href="https://github.com/lmbxmu/HRank" target="_blank">[code_v1]</a>
+                  <a href="https://github.com/lmbxmu/HRankPlus" target="_blank">[code_v2]</a>                  
+                  <br>IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>) [<b>Oral</b>]. 2020
+              </div>
+            </div>
+            <!-- 文章序列4 -->
+            <div class="product-cell row align-items-center justify-content-center">
+              <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+                <li><img class="product-cell-img" src="img/abcpruner.jpg"></li>
+              </div>
+              <div class="product-cell-text col-lg-10 col-md-9 col-sm-12 col-xs-12">
+                <b>Mingbao Lin</b>, Rongrong Ji<sup>✉</sup>, Yuxin Zhang, Baochang Zhang, Yongjian Wu, Yonghong Tian <br>
+                <b>Channel Pruning via Automatic Structure Search.</b> 
+                  <a href="https://www.ijcai.org/Proceedings/2020/0094.pdf" target="_blank">[pdf]</a>
+                  <a href="https://arxiv.org/abs/2001.08565" target="_blank">[arXiv]</a> 
+                  <a href="https://github.com/lmbxmu/abcpruner" target="_blank">[code]</a>
+                  <br>The 29th International Joint Conference on Artificial Intelligence (<b>IJCAI</b>). 2020
+              </div>
+            </div>
+            <!-- 文章序列3 -->
+            <div class="product-cell row align-items-center justify-content-center">
+              <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+                <li><img class="product-cell-img" src="img/bsodh.jpg"></li>
+              </div>
+              <div class="product-cell-text col-lg-10 col-md-9 col-sm-12 col-xs-12">
+                <b>Mingbao Lin</b>, Rongrong Ji<sup>✉</sup>, Hong Liu, Xiaoshuai Sun, Yongjian Wu<br>
+                <b>Towards Optimal Discrete Online Hashing with Balanced Similarity.</b> 
+                  <a href="https://aaai.org/ojs/index.php/AAAI/article/view/4896" target="_blank">[PDF]</a> 
+                  <a href="https://arxiv.org/abs/1901.10185" target="_blank">[arXiv]</a> 
+                  <a href="https://github.com/lmbxmu/mycode" target="_blank">[code]</a>
+                  <br>The 33rd AAAI Conference on Artificial Intelligence (<b>AAAI</b>). 2019
+              </div>
+            </div>
+            <!-- 文章序列2 -->
+            <div class="product-cell row align-items-center justify-content-center">
+              <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+                  <li><img class="product-cell-img" src="img/hcoh.jpg"></li>
+              </div>
+              <div class="product-cell-text col-lg-10 col-md-9 col-sm-12 col-xs-12">
+                <b>Mingbao Lin</b>, Rongrong Ji<sup>✉</sup>, Hong Liu, Yongjian Wu<br>
+                <b>Supervised Online Hashing via Hadamard Codebook Learning.</b> 
+                  <a href="https://dl.acm.org/doi/10.1145/3240508.3240519" target="_blank">[PDF]</a> 
+                  <a href="https://arxiv.org/abs/1905.03694" target="_blank">[arXiv]</a> 
+                  <a href="https://github.com/lmbxmu/mycode" target="_blank">[code]</a>
+                  <br>The 26th ACM International Conference on Multimedia (<b>ACM MM</b>) [<b>Oral</b>]. 2018
+              </div>
+            </div>
+            <!-- 文章序列1 -->
+            <div class="product-cell row align-items-center justify-content-center">
+              <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+                  <li><img class="product-cell-img" src="img/dense.png"></li>
+              </div>
+              <div class="product-cell-text col-lg-10 col-md-9 col-sm-12 col-xs-12">
+                <b>Mingbao Lin</b><sup>*</sup>, Hong Liu<sup>*</sup>, Shengchuan Zhang, Yongjian Wu, Feiyue Huang, Rongrong Ji<sup>✉</sup> (* denotes equal contributions)<br>
+                <b>Dense Auto-Encoder Hashing for Robust Cross-Modality Retrieval.</b> 
+                  <a href="https://dl.acm.org/doi/10.1145/3240508.3240684" target="_blank">[PDF]</a>
+                  <a href="https://github.com/LynnHongLiu/DAH" target="_blank">[code]</a>
+                  <br>The 26th ACM International Conference on Multimedia (<b>ACM MM</b>). 2018
+              </div>
+            </div>
+          </div>
+         </ol>
+         <h5>Preprint</h5>
+         <ol>
+             <!-- 文章序列12 -->             
+           <div class="product-cell row align-items-center justify-content-center">
+             <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+               <li><img class="product-cell-img" src="img/seqtr.png"></li>
+             </div>
+             <div class="product-cell-text col-lg-10 col-md-9 col-sm-12 col-xs-12">
+               Chaoyang Zhu, Yiyi Zhou, Yunhang Shen, Gen Luo, Xingjia Pan, <b>Mingbao Lin</b>, Chao Chen, Liujuan Cao<sup>✉</sup>, Xiaoshuai Sun, Rongrong Ji<br>
+               <b>SeqTR: A Simple yet Universal Network for Visual Grounding.</b> 
+                 <a href="https://arxiv.org/abs/2203.16265" target="_blank">[arXiv]</a> 
+                 <a href="https://github.com/sean-zhuh/SeqTR" target="_blank">[code]</a>
+                 <br>arXiv preprint arXiv:2203.16265. 2022
+             </div>
+           </div>              
+             <!-- 文章序列11 -->
+           <div class="product-cell row align-items-center justify-content-center">
+             <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+               <li><img class="product-cell-img" src="img/arm.png"></li>
+             </div>
+             <div class="product-cell-text col-lg-10 col-md-9 col-sm-12 col-xs-12">
+               Bohong Chen, <b>Mingbao Lin</b>, Kekai Sheng, Mengdan Zhang, Peixian Chen, Ke Li, Liujuan Cao<sup>✉</sup>, Rongrong Ji<br>
+               <b>ARM: Any-Time Super-Resolution Method.</b> 
+                 <a href="https://arxiv.org/abs/2203.10812" target="_blank">[arXiv]</a> 
+                 <a href="https://github.com/chenbong/ARM-Net" target="_blank">[code]</a>
+                 <br>arXiv preprint arXiv:2203.10812. 2022
+             </div>
+           </div>                  
+             <!-- 文章序列10 -->
+           <div class="product-cell row align-items-center justify-content-center">
+             <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+               <li><img class="product-cell-img" src="img/cfvit.png"></li>
+             </div>
+             <div class="product-cell-text col-lg-10 col-md-9 col-sm-12 col-xs-12">
+               Mengzhao Chen, <b>Mingbao Lin</b>, Ke Li, Yunhang Shen, Yongjian Wu, Fei Chao, Rongrong Ji<sup>✉</sup><br>
+               <b>Coarse-to-Fine Vision Transformer.</b> 
+                 <a href="https://arxiv.org/abs/2203.03821" target="_blank">[arXiv]</a> 
+                 <a href="https://github.com/ChenMnZ/CF-ViT" target="_blank">[code]</a>
+                 <br>arXiv preprint arXiv:2203.03821. 2022
+             </div>
+           </div>                
+             <!-- 文章序列9 -->
+           <div class="product-cell row align-items-center justify-content-center">
+             <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+               <li><img class="product-cell-img" src="img/ddtb.png"></li>
+             </div>
+             <div class="product-cell-text col-lg-10 col-md-9 col-sm-12 col-xs-12">
+               Yunshan Zhong, <b>Mingbao Lin</b>, Xunchao Li, Ke Li, Yunhang Shen, Fei Chao, Yongjian Wu, Rongrong Ji<sup>✉</sup><br>
+               <b>Dynamic Dual Trainable Bounds for Ultra-low Precision Super-Resolution.</b> 
+                 <a href="https://arxiv.org/abs/2203.03844" target="_blank">[arXiv]</a> 
+                 <a href="https://github.com/zysxmu/DDTB" target="_blank">[code]</a>
+                 <br>arXiv preprint arXiv:2203.03844. 2022
+             </div>
+           </div>            
+             <!-- 文章序列8 -->
+           <div class="product-cell row align-items-center justify-content-center">
+             <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+               <li><img class="product-cell-img" src="img/optg.png"></li>
+             </div>
+             <div class="product-cell-text col-lg-10 col-md-9 col-sm-12 col-xs-12">
+               Yuxin Zhang, <b>Mingbao Lin</b>, Mengzhao Chen, Zihan Xu, Fei Chao, Yunhang Shen, Ke Li, Yongjian Wu, Rongrong Ji<sup>✉</sup><br>
+               <b>Optimizing Gradient-driven Criteria in Network Sparsity: Gradient is All You Need.</b> 
+                 <a href="https://arxiv.org/abs/2201.12826" target="_blank">[arXiv]</a> 
+                 <a href="https://github.com/zyxxmu/OptG" target="_blank">[code]</a>
+                 <br>arXiv preprint arXiv:2201.12826. 2022
+             </div>
+           </div>            
+            <!-- 文章序列7 -->
+           <div class="product-cell row align-items-center justify-content-center">
+             <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+               <li><img class="product-cell-img" src="img/pssnet.jpg"></li>
+             </div>
+             <div class="product-cell-text col-lg-10 col-md-9 col-sm-12 col-xs-12">
+               Bohong Chen, <b>Mingbao Lin</b>, Liujuan Cao<sup>✉</sup>, Jianzhuang Liu, Qixiang Ye, Baochang Zhang, Wei Zeng, Yonghong Tian Rongrong Ji<br>
+               <b>Prioritized Subnet Sampling for Resource-Adaptive Supernet Training.</b> 
+                 <a href="https://arxiv.org/abs/2109.05432" target="_blank">[arXiv]</a> 
+                 <a href="https://github.com/chenbong/PSS-Net" target="_blank">[code]</a>
+                 <br>arXiv preprint arXiv:2109.05432. 2021
+             </div>
+           </div>                    
+            <!-- 文章序列6 -->
+           <div class="product-cell row align-items-center justify-content-center">
+             <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+               <li><img class="product-cell-img" src="img/fdda.jpg"></li>
+             </div> 
+             <div class="product-cell-text col-lg-10 col-md-9 col-sm-12 col-xs-12">
+               Yunshan Zhong, <b>Mingbao Lin</b>, Mengzhao Chen, Ke Li, Yunhang Shen, Fei Chao, Yongjian Wu, Feiyue Huang, Rongrong Ji<sup>✉</sup><br>
+               <b>Fine-grained Data Distribution Alignment for Post-Training Quantization.</b> 
+                 <a href="http://arxiv.org/abs/2109.04186" target="_blank">[arXiv]</a> 
+                 <a href="https://github.com/viperit/FDDA" target="_blank">[code]</a>
+                 <br>arXiv preprint arXiv:2109.04186. 2021
+             </div>
+           </div>                     
+            <!-- 文章序列5 -->
+           <div class="product-cell row align-items-center justify-content-center">
+             <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+               <li><img class="product-cell-img" src="img/1xn.jpg"></li>
+             </div>
+             <div class="product-cell-text col-lg-10 col-md-9 col-sm-12 col-xs-12">
+               <b>Mingbao Lin</b>, Yuxin Zhang, Yuchao Li, Bohong Chen, Fei Chao, Mengdi Wang, Shen Li, Yonghong Tian, Rongrong Ji<sup>✉</sup><br>
+               <b>1xN Pattern for Pruning Convolutional Neural Networks.</b> 
+                 <a href="https://arxiv.org/abs/2105.14713" target="_blank">[arXiv]</a> 
+                 <a href="https://github.com/lmbxmu/1xN" target="_blank">[code]</a>
+                 <br>arXiv preprint arXiv:2105.14713. 2021
+             </div>
+           </div>              
+            <!-- 文章序列4 -->
+           <div class="product-cell row align-items-center justify-content-center">
+             <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+               <li><img class="product-cell-img" src="img/siman.jpg"></li>
+             </div>
+             <div class="product-cell-text col-lg-10 col-md-9 col-sm-12 col-xs-12">
+               <b>Mingbao Lin</b>, Rongrong Ji<sup>✉</sup>, Zihan Xu, Baochang Zhang, Fei Chao, Mingliang Xu, Chia-Wen Lin, Ling Shao<br>
+               <b>SiMaN: Sign-to-Magnitude Network Binarization.</b> 
+                 <a href="http://arxiv.org/abs/2102.07981" target="_blank">[arXiv]</a> 
+                 <a href="https://github.com/lmbxmu/SiMaN" target="_blank">[code]</a>
+                 <br>arXiv preprint arXiv:2102.07981. 2021
+             </div>
+           </div> 
+            <!-- 文章序列3 -->
+           <div class="product-cell row align-items-center justify-content-center">
+             <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+               <li><img class="product-cell-img" src="img/dcff.jpg"></li>
+             </div>
+             <div class="product-cell-text col-lg-10 col-md-9 col-sm-12 col-xs-12">
+               <b>Mingbao Lin</b>, Rongrong Ji<sup>✉</sup>, Bohong Chen, Fei Chao, Jianzhuang Liu, Wei Zeng, Yonghong Tian, Qi Tian<br>
+               <b>Training Compact CNNs for Image Classification using Dynamic-coded Filter Fusion.</b> 
+                 <a href="https://arxiv.org/abs/2107.06916" target="_blank">[arXiv]</a> 
+                 <a href="https://github.com/lmbxmu/DCFF" target="_blank">[code]</a>
+                 <br>arXiv preprint arXiv:2107.06916. 2021
+             </div>
+           </div>                
+            <!-- 文章序列2 -->
+           <div class="product-cell row align-items-center justify-content-center">
+             <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+               <li><img class="product-cell-img" src="img/jackpot.jpeg"></li>
+             </div>
+             <div class="product-cell-text col-lg-10 col-md-9 col-sm-12 col-xs-12">
+                Yuxin Zhang, <b>Mingbao Lin</b>, Fei Chao, Guannan Jiang, Yan Wang, Yongjian Wu, Wei Zhang, Mingliang Xu, Yonghong Tian, Rongrong Ji<sup>✉</sup><br>
+               <b>Efficient Weight Pruning using Pre-trained Lottery Jackpots.</b> 
+                 <a href="https://arxiv.org/abs/2104.08700" target="_blank">[arXiv]</a> 
+                 <a href="https://github.com/zyxxmu/lottery-jackpots" target="_blank">[code]</a>
+                 <br>arXiv preprint arXiv:2104.08700. 2021
+             </div>
+           </div>               
+            <!-- 文章序列1 -->
+           <div class="product-cell row align-items-center justify-content-center">
+             <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+               <li><img class="product-cell-img" src="img/lecnet.jpeg"></li>
+             </div>
+             <div class="product-cell-text col-lg-10 col-md-9 col-sm-12 col-xs-12">
+                Boyu Yang, <b>Mingbao Lin</b>, Binghao Liu, Mengying Fu, Chang Liu, Rongrong Ji, Qixiang Ye<sup>✉</sup><br>
+               <b>Learnable Expansion-and-Compression Network for Few-shot Class-Incremental Learning.</b> 
+                 <a href="https://arxiv.org/abs/2104.02281" target="_blank">[arXiv]</a> 
+                 <a href="https://github.com/Yang-Bob/LECNet" target="_blank">[code]</a>
+                 <br>arXiv preprint arXiv:2104.02281. 2021
+             </div>
+           </div>                                
+         </ol>               
+      </div>
+    </section>
+    
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="working">
+      <div class="my-auto">
+        <h3 class="mb-5">Working Experience</h3>
+          <ul>
+              <li>2019.09 - Now, Research Intern, Peng Cheng Lab, Shen Zhen.       
+          </ul>
+      </div>
+    </section>         
+        
+    
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="activities">
+      <div class="my-auto">
+        <h3 class="mb-5">Activities</h3>
+          <ul>
+              <li>Conference Reviewer: CVPR, ICCV, ECCV, ICML, NeurIPS, AAAI, ACM MM, IJCNN
+              <li>Journal Reviewer: IEEE TPAMI, JMLR, IEEE TIP, IEEE TNNLS, IEEE TMM, IEEE TCSVT, NEUCOM, NEUNET, NCAA
+          </ul>
+      </div>
+    </section> 
+    
+    
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+      <div class="my-auto">
+        <h3 class="mb-5">Awards</h3>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            National Scholarship, 2021</li>
+        </ul>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            National Scholarship, 2020</li>
+        </ul>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Xiamen University Scholarship, 2019</li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
 
 </body>
+<style>
+  
 
+.product-cell {
+    /* width: 130%; */
+    /* height: 90px; */
+    margin-top: 15px;
+  }
+
+  .product-cell-img {
+    /* float: left; */
+    width: 120px;
+    height: 80px;
+  }
+
+  .product-cell-text {
+    display: inline;
+  }
+
+  .product-cell-num {
+    /* float: left; */
+    /* height: 70px; */
+    color: black;
+    margin-left: 15px;
+    /* line-height: 70px; */
+    text-align: center;
+  }
+</style>
 </html>
